@@ -1,0 +1,4 @@
+*.exe
+*.plist
+*.o
+a.out
