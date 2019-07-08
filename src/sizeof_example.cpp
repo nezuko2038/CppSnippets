@@ -9,6 +9,7 @@
 int main(void)
 {
 
+    printf("sizeof(bool)=%ld\n", sizeof(bool));
     printf("sizeof(char)=%ld\n", sizeof(char));
     printf("sizeof(int)=%ld\n", sizeof(int));
     printf("sizeof(long)=%ld\n", sizeof(long));
@@ -17,9 +18,10 @@ int main(void)
     printf("sizeof(short)=%ld\n", sizeof(short));
     typedef struct
     {
+        bool b;
         char c;
         float f;
     } st_char;
-    printf("sizeof(struct char/float)=%ld\n", sizeof(st_char));
+    printf("sizeof(struct bool/char/float)=%ld\n", sizeof(st_char));
     return 0;
 }
